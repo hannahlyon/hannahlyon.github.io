@@ -1,92 +1,149 @@
 /* The sidebar menu */
 .sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 20%; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #0e0e0e; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 20%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #0e0e0e; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  /* vertical-align: baseline; */
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 20%; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+  display: block;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
   }
-  
-  /* The navigation menu links */
   .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    /* vertical-align: baseline; */
+    font-size: 18px;
   }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Style page content */
-  .main {
-    margin-left: 20%; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+}
 
-  .sidenav h1 {
-    color: #818181;
-    font-family: 'Quicksand', sans-serif;
-    margin-left: 15px;
-  }
+.sidenav h1 {
+  color: #818181;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 15px;
+}
 
-  body, html {
-    height: 100%;
-  }
-  
-  .parallax {
-    /* The image used */
-    background-image: url("../img/bg.jpeg");
-  
-    /* Full height */
-    height: 100%;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+body {
+  /* background-image: url("img_tree.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/bg.jpeg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .text-bg {
-    height:100px;
-    background-color:#0e0e0e;
-    font-size:24px;
-    color: #f1f1f1;
-    font-family: 'Quicksand', "sans-serif";
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-bottom: 33px;
-    padding: 10px;
-    
- } 
+  background-color: #0e0e0e;
+  font-size: 24px;
+  color: #f1f1f1;
+  font-family: "Quicksand", "sans-serif";
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 33px;
+  padding: 10px;
+}
 
- .text-bg a {
-    color: #818181;
-    text-decoration: none;
- }
+.text-bg a {
+  color: #818181;
+  text-decoration: none;
+  margin: 1px;
+}
 
- .text-bg a:hover {
-    color: #f1f1f1;
+.text-bg.projects.project a {
+  color: #818181;
+  text-decoration: none;
+  margin: 1px;
 }
 
 .text-bg p {
-    color: #818181;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
+  color: #818181;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  margin: 1px;
+  margin-bottom: 20px;
+}
+
+.about,
+.projects,
+.resume,
+.contact {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+
+.img {
+  display: inline-block;
+  width: 250px;
+  vertical-align: top;
+}
+
+.img > img {
+  width: 250px;
+}
+
+.decsription {
+  display: inline-block;
+  vertical-align: middle;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+h4 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.project {
+  margin: 10px;
+}
+
+a,
+p {
+  font-size: 20px;
+  margin: 5px;
+  margin-bottom: 20px;
 }
