@@ -22,6 +22,13 @@
   /* vertical-align: baseline; */
 }
 
+.sidenav p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 10px;
+  color: #818181;
+  display: block;
+}
+
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
@@ -45,6 +52,12 @@
 }
 
 .sidenav h1 {
+  color: #818181;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 15px;
+}
+
+.sidenav p {
   color: #818181;
   font-family: "Quicksand", sans-serif;
   margin-left: 15px;
@@ -132,6 +145,11 @@ html {
   font-size: 16px;
 }
 
+/* .description a {
+  overflow-wrap: break-word; 
+  word-wrap: break-word;
+} */
+
 h4 {
   margin-bottom: 10px;
   margin-top: 10px;
@@ -146,4 +164,7 @@ p {
   font-size: 20px;
   margin: 5px;
   margin-bottom: 20px;
+  color: #818181;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 15px;
 }
