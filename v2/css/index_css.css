@@ -63,30 +63,29 @@
   margin-left: 15px;
 }
 
-body {
-  /* background-image: url("img_tree.gif");
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
-  height: 100%;
-}
-
 html {
   height: 100%;
 }
 
-.parallax {
-  /* The image used */
+body {
+  /* background-image: url("img_tree.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
   background-image: url("../img/bg.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
 
-  /* Full height */
+/* .parallax {
   height: 100%;
 
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .text-bg {
   background-color: #0e0e0e;
@@ -172,4 +171,12 @@ p {
 
 b {
   font-weight: 5mm;
+}
+
+sub {
+  padding: 6px 8px 6px 16px;
+  font-size: 10px;
+  margin: 5px;
+  color: #818181;
+  font-family: "Quicksand", sans-serif;
 }
