@@ -148,7 +148,8 @@ html {
 /* .description a {
   overflow-wrap: break-word; 
   word-wrap: break-word;
-} */
+  vertical-align: top;
+}  */
 
 h4 {
   margin-bottom: 10px;
@@ -167,4 +168,8 @@ p {
   color: #818181;
   font-family: "Quicksand", sans-serif;
   margin-left: 15px;
+}
+
+b {
+  font-weight: 5mm;
 }
