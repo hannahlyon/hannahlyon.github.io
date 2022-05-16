@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hannah Lyon</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index_style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-lg-3">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-left">
+          <div class="container-fluid">
+            <a class="navbar-brand sticky-md-top" href="#" style="height: 100%"
+              >Hannah Lyon</a
+            >
+          </div>
+        </nav>
+
+        <div class="container-fluid">
+          <ul class="nav flex-column" style="width: 100%">
+            <!-- <div class="list-group list-group-flush"> -->
+            <li>
+              <a
+                href="#about"
+                class="list-group-item list-group-item-action border border-0"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                class="list-group-item list-group-item-action border border-0"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#resume"
+                class="list-group-item list-group-item-action border border-0"
+                >Resume</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="list-group-item list-group-item-action border border-0"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- </div> -->
+        <img
+          class="img-fluid"
+          src="img/profile-pic.png"
+          alt="Self image"
+          data-bs-toggle="tooltip"
+          data-bs-placement="bottom"
+          title="website made by me!"
+        />
+      </div>
+
+      <div class="col-md-9">
+        <div class="card" style="width: 100%">
+          <div class="card-body bg-dark">
+            <h4 class="card-title">About</h4>
+            <p class="card-text">
+              Hannah is an experienced data scientist who is passionate about
+              creating excellent recommender systems in retail and e-commerce.
+              She holds an M.S. in Data Science from the University of San
+              Francisco.
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="card" style="width: 100%">
+          <div class="card-body bg-dark">
+            <h4 class="card-title">Portfolio</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary bg-dark border-0">See Profile</a>
+          </div>
+        </div>
+        <br />
+        <div class="card" style="width: 100%">
+          <div class="card-body bg-dark">
+            <h4 class="card-title">Resume</h4>
+            <a
+              href="https://drive.google.com/file/d/1LhKM3NKEkKJyN1IFwWAlUHhHLXatAP8z/view?usp=sharing"
+              class="btn btn-primary bg-light border-0"
+              >See PDF</a
+            >
+          </div>
+        </div>
+        <br />
+        <div class="card" style="width: 100%">
+          <div class="card-body bg-dark">
+            <h4 class="card-title">Contact</h4>
+            <p><a href="tel:2037336612">1-203-733-6612</a></p>
+            <p><a href="mailto:hbylyon1@gmail.com">hbylyon1@gmail.com</a></p>
+            <p>
+              <a href="https://www.linkedin.com/in/hannahbylyon/">LinkedIn</a>
+            </p>
+            <p><a href="https://github.com/hannahlyon">GitHub</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>
